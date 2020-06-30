@@ -2,7 +2,7 @@
 
 HTML or the Hyper Text Markup landguage is the primary markup language of a web page. It is the foundational structure of the of a web page which is also known as the document object model (DOM). An HTML document contains information of the structure or the layout of the web page and as well as the content itself.   
 
-The HTML document follows a tree like sturucture. Like a family tree there are tags or elements referred as parents, descendants, children and siblings depending on the location in the document. There are tags such as <HEAD>, <body> and <div> that defines the section of the document. There are also tags that define the content type, tags such as <h1> heading, <p> paragraph, <li> lists. In addtion to the types of information, an HTML document contains information related to the content of the page, such as <a> hyper inks , <img> images <link> location to resource files such as css and javascript files.
+The HTML document follows a tree like sturucture. Like a family tree there are tags or elements referred as parents, descendants, children and siblings depending on the location in the document. There are tags such as &lt;HEAD&gt;, \\&lt;body&gt; and &lt;div&gt; that defines the section of the document. There are also tags that define the content type, tags such as &lt;h1&gt; heading, &lt;p&gt; paragraph, &lt;li&gt; lists. In addtion to the types of information, an HTML document contains information related to the content of the page, such as &lt;a&gt; hyper inks , &lt;img&gt; images &lt;link&gt; location to resource files such as css and javascript files.
 
 These tags can be described as the underlying nuts and bolts that provides information on the structure and content of the web page.
 
