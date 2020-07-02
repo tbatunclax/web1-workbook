@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SunAndMoon = () => {
+const SunAndMoon = ({whichImage}) => {
     return (
-        <img src="/images/sun.png" alt="Sun and Moon" />
+        <img src={ whichImage } alt="Sun and Moon" />
     );
 
 }
