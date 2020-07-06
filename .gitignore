@@ -5,3 +5,6 @@
 
 # App generated
 .vscode
+
+# dependencies
+/single-page-app/SPA-In-Class/node_modules
