@@ -18,14 +18,4 @@ const MainStyled = styled.main`
             background-color: orange;
             font-size: 75px;
         }
-        h2 {
-            background-color: green;
-            padding: 20px;
-            font-size: 36px;
-        }
-        h3 {
-            background-color: lightblue;
-            font-size: 24px;
-            border: solid 10px red;
-        }
 `;
