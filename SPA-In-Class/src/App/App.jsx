@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 
 import Header from './Header.jsx';
 import Nav from './Nav.jsx';
@@ -10,11 +11,12 @@ const App = () => {
 
     return (
         <AppStyled className='App'>
-            
-            <Header />
-            <Nav />
-            <Main />
-            <Footer />
+            <BrowserRouter>
+                <Header />
+                <Nav />
+                <Main />
+                <Footer />
+            </BrowserRouter>
         </AppStyled>
     );
 }
@@ -25,7 +27,7 @@ const AppStyled = styled.div`
     .nested-wrapper {
         max-width: 1200px;
         margin: auto;
-
-        outline: solid red 1px;
+        padding: 10px;
+        outline: solid black 1px;
     }
 `;
