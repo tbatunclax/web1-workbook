@@ -10,7 +10,7 @@ import Login from './Pages/Login.jsx';
 
 const Main = () => {
     return (
-        <MainStyled>
+        <MainStyled className="nested-wrapper">
                 <Switch>
                     <Route path='/login' component={ Login } />
                     <Route path='/contact' component={ Contact } />
