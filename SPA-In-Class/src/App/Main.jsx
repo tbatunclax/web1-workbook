@@ -28,5 +28,5 @@ const MainStyled = styled.main`
             font-size: 75px;
 
         }
-        line-height: 150px;
+        
 `;
