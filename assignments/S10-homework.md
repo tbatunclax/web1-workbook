@@ -1,6 +1,8 @@
 ## What are testing environments? What is the difference between Local, Dev, QA and Production?
 
-## Local testing environment, 
+Testing environments allow the developers to do readily defined test cases while in different development stages.
+
+## Local testing environment 
 
 In a local testing environment, only the developer can view and access the test. This is the initial development and test phase, which may not be ready to be shared externally or to the development team.
 
