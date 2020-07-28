@@ -20,7 +20,12 @@ const Tabbed = () => {
 
     const renderTabs = () => {
         return tabItems.map ((tabItem, idx) =>{
-            return <Tab key={ idx } tabItem={ tabItem } chosenTabSet={ chosenTabSet }/>;
+            return <Tab 
+                        key={ idx } 
+                        tabItem={ tabItem } 
+                        chosenTabSet={ chosenTabSet }
+                        chosenTab = { chosenTab }
+                    />;
         });
     }
 
@@ -38,5 +43,7 @@ const Tabbed = () => {
 export default Tabbed;
 
 const TabbedStyled = styled.div`
+            
+        
     
 `;
