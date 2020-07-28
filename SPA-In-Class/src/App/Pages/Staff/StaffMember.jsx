@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { mq } from '../../../common/mediaQueries';
+
 const StaffMember = ({member}) => {
 
     return (
@@ -14,9 +16,27 @@ const StaffMember = ({member}) => {
 export default StaffMember;
 
 const StaffMemberStyled = styled.div`
+        
+        outline: solid 5px white;
+        margin: 20px;
+        width: 200px;
+        
+        @media ${mq.tablet}{
+            width: 130px;
+        }
+        @media ${mq.desktop}{
+            width: 200px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            
+        }
         .title {
-            color: green;
-           
+            background-color: maroon;
+            color: white;
+            padding: 5px;
         }
     
 `;

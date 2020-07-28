@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+/*--- components -----*/
+import ServicesContainer from './Services/ServicesContainer.jsx';
+
 const Services = () => {
 
     return (
@@ -9,7 +12,9 @@ const Services = () => {
             <Helmet>
                 <title>Services :: SPA App</title>
             </Helmet>
-            Services 
+            <div className="nested-wrapper">    
+                <ServicesContainer /> 
+            </div>    
         </ServicesStyled>
     );
 }
@@ -17,5 +22,5 @@ const Services = () => {
 export default Services;
 
 const ServicesStyled = styled.div`
-    
+         
 `;
