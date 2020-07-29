@@ -1,0 +1,3 @@
+## Function vs Form: When are web images considered part of the content(HTML) as opposed to part of the appearance (CSS)?
+
+When an image like a photograph, other than using css to align or resize is considered part of the content (HTML). The actual content of the image is not manipulated or changed. When images like borders or buttons where css is used to manipulate the color and shading and used for the purposes of the layout of the web page, it is considered part of the CSS.
