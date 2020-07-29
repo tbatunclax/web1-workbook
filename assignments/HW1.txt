@@ -16,4 +16,4 @@ Javascript
 Javascript is a scripting language and in the context of web development, it is use to control the interactivity part of a web page. Javascript is used to control the interaction between the browser and the visitor/user of the page. The javascript may used to run basic functions such as create pop-ups when clicking buttons or scrolling to the top of the page, animate images, to creating a more advanced features such as manipulating DOMs to dynamically update contents in a web page.
 
 In summary, HTML handles the structural and content, CSS the visual, and Javascript the behavioral components of a web page.
- 
+ test
