@@ -15,17 +15,17 @@ const Nav = () => {
     const [showMenu, showMenuSet] = useState(false);
 
     const toggleMenu = () => {
-        console.log('You clicked the hamburger', showMenu);
+        /*console.log('You clicked the hamburger', showMenu);*/
         showMenuSet(!showMenu);    
     }
     // useEffect is for lifecycle events, like components mounted
     // When we pass empty [] it triggers component mounted
     useEffect(()=>{
-        console.log('I have mounted');
+        // console.log('I have mounted');
 
         const handleWindowSizeChage = () => {
             const isItMobile = window.matchMedia(`(max-width:499px)`);
-            console.log(isItMobile.matches);
+            // console.log(isItMobile.matches);
 
 
             showMenuSet(!isItMobile.matches);

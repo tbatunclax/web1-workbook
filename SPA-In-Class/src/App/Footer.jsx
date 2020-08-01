@@ -15,11 +15,11 @@ const Footer = () => {
 
     const myVariable = 'I went to the park';
     const anotherOne = 123;
-    console.log(myVariable, anotherOne);
+    // console.log(myVariable, anotherOne);
 
     const timbuktu = () => {
         //actions to execute
-        console.log('Executing timbuktu');
+        // console.log('Executing timbuktu');
     }
 
     timbuktu();
