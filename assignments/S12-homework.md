@@ -1,0 +1,5 @@
+## Essay: What is considered the right size for an image or video asset?
+
+For a web site image or videso asset to display properly, on various screen sizes, choosing the right size is important so the image would not be cropped or distorted. The right size would also give the best possible resolution as intended. So it is important to consider the different type of screen sizes, so that a right size image can be displayed. CSS features such as Media queries, allow a web developer to set and display the right image size depending on the dimension of the screen sizes.
+
+In addition to the dimension or resolution sizes, the file size should also be taken into consideration as higher resolution images tend to be bigger file sizes and this could effect the load time of a web site. In this case, lowering the resolution could reduce the file size to optimize the loading time of the page.
