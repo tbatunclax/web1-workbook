@@ -2,7 +2,7 @@
 
 Tags are main buidling blocks for an HTML document. Most tags have have an opening and closing tags. 
 
-A "Class" is an attribute in a html tag, which can contain one or more class elements. Multiple html tags can share the same class element or value. The difference between an ID and a Class is that an ID is unique and each page can have only one element with an ID. A class can be used multiple times in different elements in a page. 
+A "Class" is an attribute in a html tag, which can contain one or more class elements. Multiple html tags can share the same class element or value. The difference between an ID and a Class is that an ID is unique and each page can have only one element with an ID. A class attribute can contain one or more class values and the class value can be used multiple times in a page. 
 
 In a class selector the class name is preceded by a period "." and in an ID selector, the name is preceded by a hash character "#". Both CSS and Javascript can access and manipulate the HTML tags using the specific ID or class name selectors.  
 
