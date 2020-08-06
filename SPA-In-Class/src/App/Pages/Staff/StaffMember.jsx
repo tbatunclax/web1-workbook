@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 import { mq } from '../../../common/mediaQueries';
 
-import Lightbox from '../Services/Gallery/Lightbox.jsx';
+import Lightbox from '../../../common/Lightbox.jsx';
 
 
 const StaffMember = ({member}) => {
 
-
+     // state, method
     const [ showLBox, showLBoxUpdate ] = useState(false);
 
     const turnOn = () => {
@@ -28,10 +28,10 @@ const StaffMember = ({member}) => {
             /> 
             <div className="title">{ member.name }</div>
 
-            <Lightbox show={ showLBox } hideAction={ turnOff }>
+            <Lightbox show={ showLBox } hideAction={ turnOff } width={ 200 }>
                 <img src={ member.image } alt ={ member.name } /> 
-                <div className="staffMember">
-                <h3>{ member.name }</h3>
+                <div className="title">
+                { member.name }
                 </div>
             </Lightbox>
         </StaffMemberStyled>
@@ -62,6 +62,12 @@ const StaffMemberStyled = styled.div`
             background-color: maroon;
             color: white;
             padding: 5px;
+        }
+
+        .Lightbox {
+            .title {
+                background-color: teal;
+            }
         }
     
 `;
