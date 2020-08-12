@@ -6,4 +6,4 @@ An example usage would be when a color is set as a variable, only one place wher
 
 To use a CSS preprocessor, you must install a CSS compiler on your web server or use the CSS preprocessor to compile on the development environment, and then upload the compiled CSS file to the web server.
 
-In React, styled components are Javascript modules that contains CSS. These components only send required CSS of the component that is being rendered. CSS are not included in the \<head> element as in most traditional HTML documents. Since the component contains a mixture of both Javascript and CSS, the behavioral and styling aspects of a web page, it is considered to violate the sepration of concerns.  
+In React, styled components are Javascript modules that contains CSS. These components only send required CSS of the component that is being rendered. CSS stylings are not included in the \<head> element as in most traditional HTML documents. Since the component contains a mixture of both Javascript and CSS, the behavioral and styling aspects of a web page, it is considered to violate the sepration of concerns.  
