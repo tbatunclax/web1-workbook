@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+/* Scripts ---------- */
+import API from '../../../common/axios.js';
+
 /* Components -------- */
 import FormGroup from '../../../common/Forms/FormGroup.jsx';
+import Button from '../../../common/Forms/Button.jsx'
 
 const formFields = {
     nameField: {
@@ -10,18 +14,33 @@ const formFields = {
         label: 'Name',
         inputType: 'text',
         value: '',
+        validate: {
+            required: true,
+            valid: true,
+            message: '',
+        }
     },
     emailField: {
         id: 'userEmail',
         label: 'Email',
         inputType: 'email',
         value: '',
+        validate: {
+            required: true,
+            valid: true,
+            message: '',
+        }
     },
     messageField: {
         id: 'userMessage',
         label: 'Message',
         inputType: 'textarea',
         value: '',
+        validate: {
+            required: false,
+            valid: true,
+            message: '',
+        }
     },
 }
 
@@ -34,7 +53,7 @@ const ContactForm = () => {
     const [userMessage, userMessageUpdate] = useState(formFields.messageField);
     
     const handleChange = (event, formField) => {
-        console.log(event.target.value, formField);
+        // console.log(event.target.value, formField);
 //grandpa
         //update input
         const newField = {
@@ -43,6 +62,22 @@ const ContactForm = () => {
             value: event.target.value,
         }
         //if() condition
+        if(newField.validate.required === true){
+            console.log('Validating: ', newField.label);
+
+            if(newField.value.length < 4){
+                newField.validate.valid =false;
+                newField.validate.message = `You forgot to fill out the ${newField.label} field`;
+
+            }else {
+                newField.validate.valid =false;
+                newField.validate.message = ``;
+            }
+
+        }
+
+
+
         if(formField.id === 'userName') {
             userNameUpdate(newField);
         }
@@ -55,9 +90,33 @@ const ContactForm = () => {
         }
     }
 
+    //method to submit
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        console.log('Captured Form Submit, we will take it from here.');
+
+        if( userName.validate.valid === true && userEmail.validate.valid === true ){
+            console.log('Valid Submitting form.');
+
+            // .. AJAX goes here: AKA AXIOS
+
+            const postData = {
+                userName: userName,
+                userEmail: userEmail,
+                userMessage: userMessage,
+            }
+
+
+            API.post('/sendEmail',postData).then((result)=>{
+                    console.log('result',result);
+            });
+        }
+    }
+
     return (
         <ContactFormStyled className='ContactForm'>
-            <form>
+            <form onSubmit={ handleFormSubmit }>
                 <FormGroup 
                     formField = { userName } 
                     onChange={handleChange }
@@ -70,6 +129,7 @@ const ContactForm = () => {
                     formField = { userMessage }
                     onChange={ handleChange }
                 />
+                <Button type='submit'>Send Email</Button>
             </form>
         </ContactFormStyled>
     );
