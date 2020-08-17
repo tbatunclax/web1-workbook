@@ -70,7 +70,7 @@ const ContactForm = () => {
                 newField.validate.message = `You forgot to fill out the ${newField.label} field`;
 
             }else {
-                newField.validate.valid =false;
+                newField.validate.valid =true;
                 newField.validate.message = ``;
             }
 
@@ -108,8 +108,8 @@ const ContactForm = () => {
             }
 
 
-            API.post('/sendEmail',postData).then((result)=>{
-                    console.log('result',result);
+            API.post('/api/sendEmail', postData).then((result)=>{
+                    console.log('result', result);
             });
         }
     }
@@ -119,7 +119,7 @@ const ContactForm = () => {
             <form onSubmit={ handleFormSubmit }>
                 <FormGroup 
                     formField = { userName } 
-                    onChange={handleChange }
+                    onChange={ handleChange }
                 />
                 <FormGroup 
                     formField = { userEmail } 
