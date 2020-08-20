@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 
 import Deets from './Login/Deets.jsx';
 import LoginForm from './Login/LoginForm.jsx';
-import GoogleMap from './Login/GoogleMap.jsx';
+// import GoogleMap from './Login/GoogleMap.jsx';
 
 const Login = () => {
 
