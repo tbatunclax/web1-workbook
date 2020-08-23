@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faHome,
+    faMapMarker,
 } from '@fortawesome/free-solid-svg-icons';
 
 const HouseMarker = () => {
@@ -11,7 +11,7 @@ const HouseMarker = () => {
     return (
         <HouseMarkerStyled className='HouseMarker'>
             <div className="icon">
-                <FontAwesomeIcon icon={ faHome } />
+                <FontAwesomeIcon icon={ faMapMarker } />
             </div>
             <h1>HOME SWEET HOME</h1>
         </HouseMarkerStyled>
@@ -23,9 +23,9 @@ export default HouseMarker;
 const HouseMarkerStyled = styled.div`
     &.HouseMarker {
         text-align: center;
-        color: maroon;
+        color: red;
 
-        width: 200px;
+        width: 20px;
 
         /* Center Position on map marker coordinates. */
         position: absolute;
@@ -34,8 +34,8 @@ const HouseMarkerStyled = styled.div`
 
         .icon {
             margin: auto;
-            width: 50px;
-            height: 50px;
+            width: 25px;
+            height: 25px;
             text-align: center;
 
             svg {
