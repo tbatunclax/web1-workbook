@@ -108,7 +108,7 @@ const ContactForm = () => {
             }
 
 
-            API.post('/api/sendEmail', postData).then((result)=>{
+            API.post('/api/send', postData).then((result)=>{
                     console.log('result', result);
             });
         }

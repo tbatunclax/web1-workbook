@@ -108,7 +108,7 @@ const LoginForm = () => {
             }
 
 
-            API.post('/sendPSWD', postData).then((result)=>{
+            API.post('/validate', postData).then((result)=>{
                     console.log('result', result);
             });
         }
