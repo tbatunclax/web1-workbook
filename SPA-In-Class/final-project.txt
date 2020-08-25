@@ -1,0 +1,5 @@
+https://uclax-thataw-batun-final-proj.herokuapp.com/
+
+note: used different header colors to highlight media query breaks. (black, orange, blue)
+
+Thank you very much, for the hands on and the in-depth explanations.
